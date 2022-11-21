@@ -23,7 +23,7 @@ export default function Home() {
 					name='description'
 					content='The best CrystalPvP Addon available.'
 				/>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/vficon.ico' />
 			</Head>
 			<main>
 				<Header />
