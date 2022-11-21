@@ -27,12 +27,12 @@ export default function Home() {
 			</Head>
 			<main>
 				<Header />
-				<YouTube
+				{/* <YouTube
 					style={{ height: '100vh', width: '100vw' }}
 					videoId='RdikQLQ13B8'
 					opts={opts}
 					onReady={onReady}
-				/>
+				/> */}
 			</main>
 		</div>
 	)
