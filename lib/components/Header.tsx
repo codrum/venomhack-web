@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar'
 import React, { FC } from 'react'
 
 import MenuIcon from '@mui/icons-material/Menu'
-import { IconButton } from '@mui/material'
+import { Grid, IconButton } from '@mui/material'
 import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Image from 'next/image'
@@ -19,8 +19,14 @@ export const Header: FC<{}> = () => {
 		setMobileOpen(!mobileOpen)
 	}
 	return (
-		<>
-			<AppBar position='static' sx={{ backgroundColor: 'black' }}>
+		<Grid container>
+			<AppBar
+				position='static'
+				sx={{
+					backgroundColor: 'black',
+					pb: 4,
+				}}
+			>
 				<Container maxWidth='xl'>
 					<Toolbar disableGutters>
 						<IconButton
@@ -34,10 +40,10 @@ export const Header: FC<{}> = () => {
 						</IconButton>
 						<Box
 							sx={{
-								float: { xs: 'right', md: 'left' },
+								flexGrow: 1,
 							}}
 						>
-							<Link href='/'>
+							<Link href='/' style={{ textDecoration: 'none' }}>
 								<Image
 									src='/assets/vficon.png'
 									width={72}
@@ -54,7 +60,11 @@ export const Header: FC<{}> = () => {
 							}}
 						>
 							{pages.map((page) => (
-								<Link href={page.url} key={page.title}>
+								<Link
+									href={page.url}
+									key={page.title}
+									style={{ textDecoration: 'none' }}
+								>
 									<Button
 										sx={{
 											my: 2,
@@ -74,6 +84,6 @@ export const Header: FC<{}> = () => {
 				mobileOpen={mobileOpen}
 				handleDrawerToggle={handleDrawerToggle}
 			/>
-		</>
+		</Grid>
 	)
 }
