@@ -15,7 +15,7 @@ export default function Features() {
 			<Head>
 				<title>Features: VenomHack</title>
 				<meta name='description' content='VenomHack features' />
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/vficon.ico' />
 			</Head>
 			<main>
 				<Header />

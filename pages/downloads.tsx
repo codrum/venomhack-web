@@ -11,7 +11,7 @@ export default function Downloads() {
 			<Head>
 				<title>Downloads: Venomhack</title>
 				<meta name='description' content='Venomhack public downloads' />
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/vficon.ico' />
 			</Head>
 
 			<main>
