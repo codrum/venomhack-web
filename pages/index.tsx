@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import { DonateButton } from '../lib/components/DonateButton'
 import { Header } from '../lib/components/Header'
-import styles from '../styles/Home.module.css'
+import '../styles/Home.module.css'
 
 export default function Home() {
 	return (

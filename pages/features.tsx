@@ -7,7 +7,7 @@ import { Exploits } from '../lib/components/featurePage/Exploits'
 import { Misc } from '../lib/components/featurePage/Misc'
 import { Movement } from '../lib/components/featurePage/Movement'
 import { Render } from '../lib/components/featurePage/Render'
-// import styles from '../styles/Home.module.css'
+import '../styles/Home.module.css'
 
 export default function Features() {
 	return (
