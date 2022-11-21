@@ -27,17 +27,13 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
-			<Script
-				src='https://www.paypalobjects.com/donate/sdk/donate-sdk.js'
-				charSet='UTF-8'
-			></Script>
 			<main>
 				<Header />
 				<Typography variant='h2' textAlign='center' gutterBottom>
 					VenomHack420
 				</Typography>
 				<Grid container justifyContent='center'>
-					<Grid item xs={6}>
+					<Grid item xs={12} md={6}>
 						<Typography variant='body1' textAlign='center'>
 							Unfortunately the time has come where VenomHack420
 							has been leaked and made public. Please, do not

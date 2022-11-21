@@ -24,61 +24,61 @@ export const Header: FC<{}> = () => {
 				position='static'
 				sx={{
 					backgroundColor: 'black',
-					pb: 4,
+					// pb: 4,
 				}}
 			>
-				<Container maxWidth='xl'>
-					<Toolbar disableGutters>
-						<IconButton
-							color='inherit'
-							aria-label='open drawer'
-							edge='start'
-							onClick={handleDrawerToggle}
-							sx={{ mr: 2, display: { sm: 'none' } }}
-						>
-							<MenuIcon />
-						</IconButton>
-						<Box
-							sx={{
-								flexGrow: 1,
-							}}
-						>
-							<Link href='/' style={{ textDecoration: 'none' }}>
-								<Image
-									src='/assets/vficon.png'
-									width={72}
-									height={72}
-									alt='vflogo'
-								/>
-							</Link>
-						</Box>
+				<Toolbar disableGutters>
+					<IconButton
+						color='inherit'
+						aria-label='open drawer'
+						edge='start'
+						onClick={handleDrawerToggle}
+						sx={{ ml: 2, display: { sm: 'none' } }}
+					>
+						<MenuIcon />
+					</IconButton>
+					<Box
+						sx={{
+							flexGrow: 1,
+							display: { xs: 'none', md: 'flex' },
+						}}
+					>
+						<Link href='/' style={{ textDecoration: 'none' }}>
+							<Image
+								src='/assets/vficon.png'
+								width={72}
+								height={72}
+								alt='vflogo'
+							/>
+						</Link>
+					</Box>
 
-						<Box
-							sx={{
-								flexGrow: 1,
-								display: { xs: 'none', md: 'flex' },
-							}}
-						>
-							{pages.map((page) => (
-								<Link
-									href={page.url}
-									key={page.title}
-									style={{ textDecoration: 'none' }}
+					<Box
+						sx={{
+							display: { xs: 'none', md: 'flex' },
+							justifyContent: 'flex-end',
+							pr: 8,
+						}}
+					>
+						{pages.map((page) => (
+							<Link
+								href={page.url}
+								key={page.title}
+								style={{ textDecoration: 'none' }}
+							>
+								<Button
+									sx={{
+										my: 2,
+										color: 'white',
+										display: 'block',
+									}}
 								>
-									<Button
-										sx={{
-											my: 2,
-											color: 'white',
-											display: 'block',
-										}}
-									>
-										{page.title}
-									</Button>
-								</Link>
-							))}
-						</Box>
-					</Toolbar>
-				</Container>
+									{page.title}
+								</Button>
+							</Link>
+						))}
+					</Box>
+				</Toolbar>
 			</AppBar>
 			<HeaderDrawer
 				mobileOpen={mobileOpen}
