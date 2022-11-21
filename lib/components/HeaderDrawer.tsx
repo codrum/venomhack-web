@@ -9,7 +9,6 @@ import {
 	ListItemText,
 	Typography,
 } from '@mui/material'
-import { drawerWidth } from './Header'
 import { pages } from '../../data/pages'
 import Link from 'next/link'
 
@@ -17,11 +16,11 @@ type HeaderDrawerProps = {
 	mobileOpen: boolean
 	handleDrawerToggle: () => void
 }
-
 export const HeaderDrawer: FC<HeaderDrawerProps> = ({
 	mobileOpen,
 	handleDrawerToggle,
 }) => {
+	const drawerWidth = 240
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
 			<Typography variant='h6' sx={{ my: 2 }}>

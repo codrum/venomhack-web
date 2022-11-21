@@ -12,9 +12,7 @@ import Link from 'next/link'
 import { pages } from '../../data/pages'
 import { HeaderDrawer } from './HeaderDrawer'
 
-export const drawerWidth = 240
-
-export const Header: FC<{}> = (props) => {
+export const Header: FC<{}> = () => {
 	const [mobileOpen, setMobileOpen] = React.useState(false)
 
 	const handleDrawerToggle = () => {
