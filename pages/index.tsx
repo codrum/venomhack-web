@@ -1,20 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import YouTube, { YouTubeEvent } from 'react-youtube'
+// import YouTube, { YouTubeEvent } from 'react-youtube'
 import { Header } from '../lib/components/Header'
 // import styles from '../styles/Home.module.css'
 
 export default function Home() {
-	const opts = {
-		height: '100%',
-		width: '100%',
-		playerVars: {
-			autoplay: 0,
-		},
-	}
-	const onReady = (event: YouTubeEvent<any>) => {
-		event.target.pauseVideo()
-	}
+	// const opts = {
+	// 	height: '100%',
+	// 	width: '100%',
+	// 	playerVars: {
+	// 		autoplay: 0,
+	// 	},
+	// }
+	// const onReady = (event: YouTubeEvent<any>) => {
+	// 	event.target.pauseVideo()
+	// }
 	return (
 		<div>
 			<Head>
