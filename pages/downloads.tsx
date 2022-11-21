@@ -1,13 +1,13 @@
 import { Typography } from '@mui/material'
 import Head from 'next/head'
 import { Header } from '../lib/components/Header'
-import '../styles/Home.module.css'
+// import '../styles/Home.module.css'
 
 export default function Downloads() {
 	return (
 		<div>
 			<Head>
-				<title>Downloads: Venomhack</title>
+				<title>Downloads: VenomHack420</title>
 				<meta name='description' content='Venomhack public downloads' />
 				<link rel='icon' href='/vficon.ico' />
 			</Head>

@@ -7,7 +7,7 @@ import { Exploits } from '../lib/components/featurePage/Exploits'
 import { Misc } from '../lib/components/featurePage/Misc'
 import { Movement } from '../lib/components/featurePage/Movement'
 import { Render } from '../lib/components/featurePage/Render'
-import '../styles/Home.module.css'
+// import '../styles/globals.css'
 
 export default function Features() {
 	return (
@@ -20,7 +20,7 @@ export default function Features() {
 			<main>
 				<Header />
 				<Typography variant='h3' gutterBottom textAlign='center'>
-					VenomHack420 Features
+					Features
 				</Typography>
 				<Container>
 					<Chat />

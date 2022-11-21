@@ -1,9 +1,8 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Script from 'next/script'
 import { DonateButton } from '../lib/components/DonateButton'
 import { Header } from '../lib/components/Header'
-import '../styles/Home.module.css'
+// import '../styles/globals.css'
 
 export default function Home() {
 	return (
@@ -22,7 +21,7 @@ export default function Home() {
 					<Grid container justifyContent='center'>
 						<Grid item xs={12}>
 							<Typography
-								variant='h3'
+								variant='h4'
 								textAlign='center'
 								gutterBottom
 							>
@@ -30,7 +29,7 @@ export default function Home() {
 							</Typography>
 						</Grid>
 						<Grid item xs={12} md={6}>
-							<Typography variant='body1' textAlign='center'>
+							<Typography variant='body1' textAlign='left'>
 								Unfortunately the time has come where
 								VenomHack420 has been leaked and made public.
 								Please, do not trust third party sources. We
@@ -38,7 +37,7 @@ export default function Home() {
 								only download it from us, the creators.
 							</Typography>
 							<DonateButton />
-							<Typography variant='body1' textAlign='center'>
+							<Typography variant='body1' textAlign='left'>
 								We have been working hard to stay on top of the
 								game and have been developing VenomHack for
 								years. If you enjoy our client, please feel free
