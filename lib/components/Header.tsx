@@ -15,16 +15,11 @@ import { HeaderDrawer } from './HeaderDrawer'
 export const drawerWidth = 240
 
 export const Header: FC<{}> = (props) => {
-	const { window } = props
-
 	const [mobileOpen, setMobileOpen] = React.useState(false)
 
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen)
 	}
-
-	const container =
-		window !== undefined ? () => window().document.body : undefined
 	return (
 		<>
 			<AppBar position='static' sx={{ backgroundColor: 'black' }}>
@@ -78,7 +73,6 @@ export const Header: FC<{}> = (props) => {
 				</Container>
 			</AppBar>
 			<HeaderDrawer
-				container={container}
 				mobileOpen={mobileOpen}
 				handleDrawerToggle={handleDrawerToggle}
 			/>

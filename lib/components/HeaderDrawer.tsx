@@ -14,13 +14,11 @@ import { pages } from '../../data/pages'
 import Link from 'next/link'
 
 type HeaderDrawerProps = {
-	container: (() => any) | undefined
 	mobileOpen: boolean
 	handleDrawerToggle: () => void
 }
 
 export const HeaderDrawer: FC<HeaderDrawerProps> = ({
-	container,
 	mobileOpen,
 	handleDrawerToggle,
 }) => {
@@ -46,7 +44,6 @@ export const HeaderDrawer: FC<HeaderDrawerProps> = ({
 	return (
 		<Box component='nav'>
 			<Drawer
-				container={container}
 				variant='temporary'
 				open={mobileOpen}
 				onClose={handleDrawerToggle}
