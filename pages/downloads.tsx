@@ -8,8 +8,26 @@ export default function Downloads() {
 	return (
 		<div>
 			<Head>
-				<title>Downloads: Venomhack420</title>
-				<meta name='description' content='Venomhack public downloads' />
+				<title>Features: Venomhack</title>
+				<meta
+					name='description'
+					content='Venomhack420 was unfortunately leaked, so we are officially releasing the most up to date version of Venomhack420. Enjoy, lads.'
+				/>
+				<meta name='og:site_name' content='Venomhack420 Downloads' />
+				<meta name='og:type' content='object' />
+				<meta
+					name='og:image'
+					content='https://venomhack.com/assets/venomfors.jpg'
+				/>
+				<meta
+					name='og:title'
+					content='Venomhack420 Official Downloads by Venomforce'
+				/>
+				<meta name='og:url' content='https://venomhack.com' />
+				<meta
+					name='og:description'
+					content='Venomhack420 was unfortunately leaked, so we are officially releasing the most up to date version of Venomhack420. Enjoy, lads.'
+				/>
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
 

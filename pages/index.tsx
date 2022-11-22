@@ -16,8 +16,14 @@ export default function Home() {
 				/>
 				<meta name='og:site_name' content='Venomhack420' />
 				<meta name='og:type' content='object' />
-				<meta name='og:image' content='/assets/venomfors.jpg' />
-				<meta name='og:title' content='Home' />
+				<meta
+					name='og:image'
+					content='https://venomhack.com/assets/venomfors.jpg'
+				/>
+				<meta
+					name='og:title'
+					content='Venomhack420 Official Release by Venomforce'
+				/>
 				<meta name='og:url' content='https://venomhack.com' />
 				<meta
 					name='og:description'
