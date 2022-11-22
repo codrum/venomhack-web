@@ -8,14 +8,11 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>
-					VenomHack: A Meteor addon and Standalone Mod Menu by
-					Venomforce
-				</title>
+				<title>Venomhack420</title>
 				<meta
 					name='description'
 					content='Venomhack420 was pioneered by tyrannus00 with help from several others over the years. 
-					It is known as the most OP Minecraft hacked client, and everyone who uses Venomhack is a god.'
+					It is known as the most OP Minecraft 1.19 client, and everyone who uses Venomhack is a god.'
 				/>
 				<meta name='og:site_name' content='Venomhack420' />
 				<meta name='og:type' content='object' />
@@ -24,8 +21,11 @@ export default function Home() {
 				<meta name='og:url' content='https://venomhack.com' />
 				<meta
 					name='og:description'
-					content='The website for Meteor Client.'
+					content='Venomhack420 was pioneered by tyrannus00 with help from several others over the years. 
+					It is known as the most OP Minecraft 1.19 client, and everyone who uses Venomhack is a god.'
 				/>
+
+				<meta name='theme-color' content='#000000' />
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
 			<main>
@@ -44,7 +44,7 @@ export default function Home() {
 						<Grid item xs={12} md={8}>
 							<Typography variant='body1' textAlign='left'>
 								Unfortunately the time has come where
-								VenomHack420 has been leaked and made public.
+								Venomhack420 has been leaked and made public.
 								Please, do not trust third party sources. We
 								know that our client is highly sought after, so
 								only download it from us, the creators.
@@ -52,7 +52,7 @@ export default function Home() {
 							<DonateButton />
 							<Typography variant='body1' textAlign='left'>
 								We have been working hard to stay on top of the
-								game and have been developing VenomHack for
+								game and have been developing Venomhack for
 								years. If you enjoy our client, please feel free
 								to buy a coffee for the creators.
 							</Typography>
