@@ -8,7 +8,7 @@ export default function Downloads() {
 	return (
 		<div>
 			<Head>
-				<title>Downloads: VenomHack420</title>
+				<title>Downloads: Venomhack420</title>
 				<meta name='description' content='Venomhack public downloads' />
 				<link rel='icon' href='/vficon.ico' />
 			</Head>

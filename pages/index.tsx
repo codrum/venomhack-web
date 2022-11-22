@@ -8,10 +8,23 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>VenomHack: A Meteor addon by VenomForce</title>
+				<title>
+					VenomHack: A Meteor addon and Standalone Mod Menu by
+					Venomforce
+				</title>
 				<meta
 					name='description'
-					content='The best CrystalPvP Addon available.'
+					content='Venomhack420 was pioneered by tyrannus00 with help from several others over the years. 
+					It is known as the most OP Minecraft hacked client, and everyone who uses Venomhack is a god.'
+				/>
+				<meta name='og:site_name' content='Venomhack420' />
+				<meta name='og:type' content='object' />
+				<meta name='og:image' content='/assets/venomfors.jpg' />
+				<meta name='og:title' content='Home' />
+				<meta name='og:url' content='https://venomhack.com' />
+				<meta
+					name='og:description'
+					content='The website for Meteor Client.'
 				/>
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
@@ -25,10 +38,10 @@ export default function Home() {
 								textAlign='center'
 								gutterBottom
 							>
-								VenomHack420
+								Venomhack420
 							</Typography>
 						</Grid>
-						<Grid item xs={12} md={6}>
+						<Grid item xs={12} md={8}>
 							<Typography variant='body1' textAlign='left'>
 								Unfortunately the time has come where
 								VenomHack420 has been leaked and made public.

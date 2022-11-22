@@ -13,7 +13,7 @@ export default function Features() {
 	return (
 		<div>
 			<Head>
-				<title>Features: VenomHack</title>
+				<title>Features: Venomhack</title>
 				<meta name='description' content='VenomHack features' />
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
