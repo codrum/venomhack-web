@@ -8,12 +8,12 @@ export default function Downloads() {
 	return (
 		<div>
 			<Head>
-				<title>Features: Venomhack</title>
+				<title>Downloads | Venomhack420</title>
 				<meta
 					name='description'
 					content='Venomhack420 was unfortunately leaked, so we are officially releasing the most up to date version of Venomhack420. Enjoy, lads.'
 				/>
-				<meta name='og:site_name' content='Venomhack420 Downloads' />
+				<meta name='og:site_name' content='Venomhack420' />
 				<meta name='og:type' content='object' />
 				<meta
 					name='og:image'

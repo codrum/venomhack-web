@@ -13,13 +13,13 @@ export default function Features() {
 	return (
 		<div>
 			<Head>
-				<title>Features: Venomhack</title>
+				<title>Features | Venomhack420</title>
 				<meta
 					name='description'
 					content='Venomhack420 has over 70 unique mods in the Newbase version. Venomhack420 is most known 
 					for its next-generation Crystal Aura, which allows the player to dominate opponents in CPvP.'
 				/>
-				<meta name='og:site_name' content='Venomhack420 Features' />
+				<meta name='og:site_name' content='Venomhack420' />
 				<meta name='og:type' content='object' />
 				<meta
 					name='og:image'
