@@ -1,8 +1,18 @@
-import { Typography } from '@mui/material'
+import {
+	createTheme,
+	CssBaseline,
+	ThemeProvider,
+	Typography,
+} from '@mui/material'
 import Head from 'next/head'
 import { DownloadButtons } from '../lib/components/downloadPage/DownloadButtons'
 import { Header } from '../lib/components/Header'
 // import '../styles/Home.module.css'
+const darkTheme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
+})
 
 export default function Downloads() {
 	return (

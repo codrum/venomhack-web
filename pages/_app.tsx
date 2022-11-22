@@ -2,6 +2,13 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import Head from 'next/head'
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material'
+
+const darkTheme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
+})
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -39,7 +46,10 @@ export default function App({ Component, pageProps }: AppProps) {
         });
 		`}
 			</Script>
-			<Component {...pageProps} />
+			<ThemeProvider theme={darkTheme}>
+				<CssBaseline />
+				<Component {...pageProps} />
+			</ThemeProvider>
 		</>
 	)
 }
