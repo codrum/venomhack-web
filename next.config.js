@@ -7,7 +7,6 @@ module.exports = {
 	reactStrictMode: true,
 	// comment out while in dev
 	images: {
-		loader: 'imgix',
-		path: 'https://venom-hack.imgix.net',
+		unoptimized: true,
 	},
 }
