@@ -19,7 +19,7 @@ export const Header: FC<{}> = () => {
 		setMobileOpen(!mobileOpen)
 	}
 	return (
-		<Grid container sx={{}}>
+		<Grid container sx={{ pb: 2 }}>
 			<AppBar
 				position='static'
 				component='nav'
