@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 
-const nextConfig = {
-	reactStrictMode: true,
-	swcMinify: true,
-	assetPrefix: isProd ? '/venomhack.com/' : '',
-}
-
 module.exports = {
-	nextConfig,
+	assetPrefix: isProd ? '/venomhack.com/' : undefined,
+	swcMinify: true,
+	reactStrictMode: true,
 	// comment out while in dev
 	images: {
-		unoptomized: 'true',
+		loader: 'imgix',
+		path: 'https://stillwater-disc-golf.imgix.net',
 	},
 }
