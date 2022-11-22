@@ -19,7 +19,7 @@ export const Header: FC<{}> = () => {
 		setMobileOpen(!mobileOpen)
 	}
 	return (
-		<Grid container sx={{ pb: 4 }}>
+		<Grid container sx={{}}>
 			<AppBar
 				position='static'
 				component='nav'
@@ -34,21 +34,24 @@ export const Header: FC<{}> = () => {
 						aria-label='open drawer'
 						edge='start'
 						onClick={handleDrawerToggle}
-						sx={{ ml: 2, display: { sm: 'none' } }}
+						sx={{ ml: 2, display: { md: 'none' } }}
 					>
 						<MenuIcon />
 					</IconButton>
 					<Box
 						sx={{
 							flexGrow: 1,
-							display: { xs: 'none', md: 'flex' },
+							textAlign: { xs: 'right', md: 'left' },
+							pt: 2,
+							visibility: mobileOpen ? 'hidden' : 'visible',
+							// display: { xs: 'none', md: 'flex' },
 						}}
 					>
-						<Link href='/' style={{ textDecoration: 'none' }}>
+						<Link href='/'>
 							<Image
 								src='/assets/vficon.png'
-								width={72}
-								height={72}
+								width={100}
+								height={100}
 								alt='vflogo'
 							/>
 						</Link>

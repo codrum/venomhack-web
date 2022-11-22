@@ -11,6 +11,7 @@ import {
 } from '@mui/material'
 import { pages } from '../../data/pages'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type HeaderDrawerProps = {
 	mobileOpen: boolean
@@ -23,9 +24,17 @@ export const HeaderDrawer: FC<HeaderDrawerProps> = ({
 	const drawerWidth = 240
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-			<Typography variant='h6' sx={{ my: 2 }}>
-				VenomHack
-			</Typography>
+			<Link href='/'>
+				<Image
+					src='/vficon.ico'
+					width={100}
+					height={100}
+					alt='vflogo'
+				/>
+				{/* <Typography variant='h6' sx={{ my: 2 }}>
+					Venomhack420
+				</Typography> */}
+			</Link>
 			<Divider />
 			<List>
 				{pages.map((page) => (

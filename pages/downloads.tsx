@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material'
 import Head from 'next/head'
+import { DownloadButtons } from '../lib/components/downloadPage/DownloadButtons'
 import { Header } from '../lib/components/Header'
 // import '../styles/Home.module.css'
 
@@ -12,11 +13,17 @@ export default function Downloads() {
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
 
-			<main>
+			<main
+				style={{
+					backgroundImage: '/assets/vficon.png',
+					backgroundSize: 'cover',
+				}}
+			>
 				<Header />
-				<Typography variant='h3' textAlign='center'>
+				<Typography variant='h3' textAlign='center' sx={{ pb: 4 }}>
 					Downloads
 				</Typography>
+				<DownloadButtons />
 			</main>
 		</div>
 	)
