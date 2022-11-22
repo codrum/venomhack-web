@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Venomhack420</title>
+				<title>Venomhack420: Home</title>
 				<meta
 					name='description'
 					content='Venomhack420 was pioneered by tyrannus00 with help from several others over the years. 

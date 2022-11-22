@@ -38,7 +38,7 @@ export default function Downloads() {
 				}}
 			>
 				<Header />
-				<Typography variant='h3' textAlign='center' sx={{ pb: 4 }}>
+				<Typography variant='h4' textAlign='center' sx={{ pb: 4 }}>
 					Downloads
 				</Typography>
 				<DownloadButtons />

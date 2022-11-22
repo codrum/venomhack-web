@@ -40,7 +40,7 @@ export default function Features() {
 			</Head>
 			<main>
 				<Header />
-				<Typography variant='h3' gutterBottom textAlign='center'>
+				<Typography variant='h4' gutterBottom textAlign='center'>
 					Features
 				</Typography>
 				<Container>
