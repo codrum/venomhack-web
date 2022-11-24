@@ -12,6 +12,7 @@ import {
 import { pages } from '../../data/pages'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTheme } from '@mui/material/styles'
 
 type HeaderDrawerProps = {
 	mobileOpen: boolean
@@ -21,16 +22,29 @@ export const HeaderDrawer: FC<HeaderDrawerProps> = ({
 	mobileOpen,
 	handleDrawerToggle,
 }) => {
+	const theme = useTheme()
 	const drawerWidth = 240
+	if (theme.palette.mode === 'dark') {
+	}
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
 			<Link href='/'>
-				<Image
-					src='/vficon.ico'
-					width={100}
-					height={100}
-					alt='vflogo'
-				/>
+				{theme.palette.mode === 'dark' ? (
+					<Image
+						src='/assets/vficon.png'
+						width={100}
+						height={100}
+						alt='vflogo'
+					/>
+				) : (
+					<Image
+						src='/vficon.ico'
+						width={100}
+						height={100}
+						alt='vflogo'
+					/>
+				)}
+
 				{/* <Typography variant='h6' sx={{ my: 2 }}>
 					Venomhack420
 				</Typography> */}
