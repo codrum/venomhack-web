@@ -23,9 +23,9 @@ export const Header: FC<{}> = () => {
 			<AppBar
 				position='static'
 				component='nav'
+				color='transparent'
 				sx={{
-					backgroundColor: 'black',
-					// pb: 4,
+					boxShadow: 'none',
 				}}
 			>
 				<Toolbar disableGutters>

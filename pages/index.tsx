@@ -48,15 +48,12 @@ export default function Home() {
 							</Typography>
 						</Grid>
 						<Grid item xs={12} md={8}>
-							<Typography variant='body1' textAlign='left'>
-								Unfortunately the time has come where
-								Venomhack420 has been leaked and made public.
-								Please, do not trust third party sources. We
-								know that our client is highly sought after, so
-								only download it from us, the creators.
+							<Typography variant='body1' textAlign='center'>
+								Venomhack420 is the formerly private 1.19 client
+								used by the members of Venomforce.
 							</Typography>
 							<DonateButton />
-							<Typography variant='body1' textAlign='left'>
+							<Typography variant='body1' textAlign='center'>
 								We have been working hard to stay on top of the
 								game and have been developing Venomhack for
 								years. If you enjoy our client, please feel free
