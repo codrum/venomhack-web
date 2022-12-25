@@ -50,7 +50,7 @@ export default function Home() {
 						<Grid item xs={12} md={8}>
 							<Typography variant='body1' textAlign='center'>
 								Venomhack420 is the formerly private 1.19 client
-								used by the members of Venomforce.
+								created by the members of Venomforce.
 							</Typography>
 							<DonateButton />
 							<Typography variant='body1' textAlign='center'>
