@@ -9,13 +9,16 @@ export default function Home() {
 		<div>
 			<Head>
 				<title>Home | Venomhack420</title>
-				{/* <meta
+				<meta
+					name='title'
+					content='Venomhack420 Official Release by Venomforce'
+				></meta>
+				<meta
 					name='description'
-					content='Venomhack420 was pioneered by tyrannus00 with help from several others over the years. 
-					It is known as the most OP Minecraft 1.19 client, and everyone who uses Venomhack is a god.'
-				/> */}
+					content='Venomhack420 is available as a Meteor Client addon or as a standalone client. It was pioneered by tyrannus00 and other members of Venomforce and everyone who uses Venomhack is a god at pvp.'
+				/>
 				<meta property='og:site_name' content='Venomhack420' />
-				<meta property='og:type' content='article' />
+				<meta property='og:type' content='website' />
 				<meta
 					property='og:image'
 					content='https://venomhack.com/assets/venomfors.jpg'
