@@ -14,27 +14,28 @@ export default function Features() {
 		<div>
 			<Head>
 				<title>Features | Venomhack420</title>
-				<meta
+				{/* <meta
 					name='description'
 					content='Venomhack420 has over 70 unique mods in the Newbase version. Venomhack420 is most known 
 					for its next-generation Crystal Aura, which allows the player to dominate opponents in CPvP.'
-				/>
-				<meta name='og:site_name' content='Venomhack420' />
-				<meta name='og:type' content='object' />
+				/> */}
+				<meta property='og:site_name' content='Venomhack420' />
+				<meta property='og:type' content='article' />
 				<meta
-					name='og:image'
+					property='og:image'
 					content='https://venomhack.com/assets/venomfors.jpg'
 				/>
 				<meta
-					name='og:title'
+					property='og:title'
 					content='Venomhack420 Official Features by Venomforce'
 				/>
-				<meta name='og:url' content='https://venomhack.com' />
+				<meta property='og:url' content='https://venomhack.com' />
 				<meta
-					name='og:description'
+					property='og:description'
 					content='Venomhack420 has over 70 unique mods in the Newbase version. Venomhack420 is most known 
 					for its next-generation Crystal Aura, which allows the player to dominate opponents in CPvP.'
 				/>
+				<meta name='twitter:card' content='summary_large_image' />
 
 				<link rel='icon' href='/vficon.ico' />
 			</Head>

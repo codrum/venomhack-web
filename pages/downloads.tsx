@@ -19,25 +19,26 @@ export default function Downloads() {
 		<div>
 			<Head>
 				<title>Downloads | Venomhack420</title>
-				<meta
+				{/* <meta
 					name='description'
 					content='Venomhack420 was unfortunately leaked, so we are officially releasing the most up to date version of Venomhack420. Enjoy, lads.'
-				/>
-				<meta name='og:site_name' content='Venomhack420' />
-				<meta name='og:type' content='object' />
+				/> */}
+				<meta property='og:site_name' content='Venomhack420' />
+				<meta property='og:type' content='article' />
 				<meta
-					name='og:image'
+					property='og:image'
 					content='https://venomhack.com/assets/venomfors.jpg'
 				/>
 				<meta
-					name='og:title'
+					property='og:title'
 					content='Venomhack420 Official Downloads by Venomforce'
 				/>
-				<meta name='og:url' content='https://venomhack.com' />
+				<meta property='og:url' content='https://venomhack.com' />
 				<meta
-					name='og:description'
-					content='Venomhack420 was unfortunately leaked, so we are officially releasing the most up to date version of Venomhack420. Enjoy, lads.'
+					property='og:description'
+					content='Venomhack420 downloads page.'
 				/>
+				<meta name='twitter:card' content='summary_large_image' />
 				<link rel='icon' href='/vficon.ico' />
 			</Head>
 
