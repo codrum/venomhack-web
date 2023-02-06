@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import styled from 'styled-components'
-import { Typography } from '@/components/typography'
+import { Backdrop } from '@/components/Backdrop'
+import { FeaturesHead } from '@/components/head'
 import { Header } from '@/components/Header'
 import { Container } from '@/components/layout/Container'
-import { rem } from '@/theme/helpers'
-import { Backdrop } from '@/components/Backdrop'
-import { useState } from 'react'
-import Image from 'next/image'
-import { ImageContainer } from './downloads'
 import { TextWithImage } from '@/components/TextWithImage'
+import { Typography } from '@/components/typography'
+import { rem } from '@/theme/helpers'
+import { useState } from 'react'
+import styled from 'styled-components'
 const HeadingContainer = styled.div`
 	padding: ${rem(32)} 0;
 `
@@ -45,35 +43,7 @@ export default function FeaturesPage() {
 	const backDrop = drawerOpen && <Backdrop closeDrawer={handleCloseDrawer} />
 	return (
 		<>
-			<Head>
-				<title>Features | Venomhack420</title>
-				<meta
-					name='title'
-					content='Venomhack420 Official Features by Venomforce'
-				/>
-				<meta
-					name='description'
-					content='Venomhack420 has over 70 unique mods in the Newbase version. Venomhack420 is most known 
-					for its next-generation Crystal Aura, which allows the player to dominate opponents in CPvP.'
-				/>
-				<meta property='og:site_name' content='Venomhack420' />
-				<meta property='og:type' content='website' />
-				<meta
-					property='og:image'
-					content='https://venomhack.com/assets/venomfors.jpg'
-				/>
-				<meta
-					property='og:title'
-					content='Venomhack420 Official Features by Venomforce'
-				/>
-				<meta property='og:url' content='https://venomhack.com' />
-				<meta
-					property='og:description'
-					content='Venomhack420 has over 70 unique mods in the Newbase version. Venomhack420 is most known 
-					for its next-generation Crystal Aura, which allows the player to dominate opponents in CPvP.'
-				/>
-				<meta name='twitter:card' content='summary_large_image' />
-			</Head>
+			<FeaturesHead />
 			{backDrop}
 			<main>
 				<Container>

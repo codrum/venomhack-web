@@ -1,4 +1,5 @@
 import { Backdrop } from '@/components/Backdrop'
+import { DownloadsHead } from '@/components/head'
 import { Header } from '@/components/Header'
 import { Container } from '@/components/layout/Container'
 import { TextWithImage } from '@/components/TextWithImage'
@@ -7,12 +8,12 @@ import { rem } from '@/theme/helpers'
 import Head from 'next/head'
 import { useState } from 'react'
 import styled from 'styled-components'
-const A = styled.a`
+export const A = styled.a`
 	display: block;
 	padding-bottom: ${rem(64)};
 	cursor: pointer;
 `
-const BodyContainer = styled(Container)`
+export const BodyContainer = styled(Container)`
 	margin-top: ${rem(128)};
 `
 const DownloadsHeading = styled(Typography.Heading.Default)`
@@ -45,33 +46,7 @@ export default function DownloadsPage() {
 	const backDrop = drawerOpen && <Backdrop closeDrawer={handleCloseDrawer} />
 	return (
 		<>
-			<Head>
-				<title>Downloads | Venomhack420</title>
-				<meta
-					name='title'
-					content='Venomhack420 Official Downloads by Venomforce'
-				/>
-				<meta
-					name='description'
-					content='Venomhack420 downloads page.'
-				/>
-				<meta property='og:site_name' content='Venomhack420' />
-				<meta property='og:type' content='website' />
-				<meta
-					property='og:image'
-					content='https://venomhack.com/assets/venomfors.jpg'
-				/>
-				<meta
-					property='og:title'
-					content='Venomhack420 Official Downloads by Venomforce'
-				/>
-				<meta property='og:url' content='https://venomhack.com' />
-				<meta
-					property='og:description'
-					content='Venomhack420 downloads page.'
-				/>
-				<meta name='twitter:card' content='summary_large_image' />
-			</Head>
+			<DownloadsHead />
 			{backDrop}
 			<main>
 				<Container>

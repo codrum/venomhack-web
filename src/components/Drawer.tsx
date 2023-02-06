@@ -89,6 +89,16 @@ export const Drawer: FunctionComponent<{
 					</A>
 				</Li>
 				<Li>
+					<A href='/showcase'>
+						<MenuText>Showcase</MenuText>
+					</A>
+				</Li>
+				<Li>
+					<A href='https://discord.gg/VqRd4MJkbY'>
+						<MenuText>Discord</MenuText>
+					</A>
+				</Li>
+				<Li>
 					<A href='https://paypal.me/fargendo'>
 						<MenuText>Donate</MenuText>
 					</A>

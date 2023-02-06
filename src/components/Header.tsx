@@ -68,9 +68,9 @@ export const Header: FunctionComponent<{
 							Download
 						</Typography.Body.Default>
 					</A>
-					<A href='https://paypal.me/fargendo'>
+					<A href='/showcase'>
 						<Typography.Body.Default>
-							Donate
+							Showcase
 						</Typography.Body.Default>
 					</A>
 				</Item>

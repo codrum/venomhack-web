@@ -1,12 +1,16 @@
 import { Backdrop } from '@/components/Backdrop'
+import { HomeHead } from '@/components/head'
 import { Header } from '@/components/Header'
 import { Container } from '@/components/layout/Container'
+import { TextWithImage } from '@/components/TextWithImage'
 import { Typography } from '@/components/typography'
+import YouTubeFrame from '@/components/YoutubeFrame'
 import { rem } from '@/theme/helpers'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import styled from 'styled-components'
+import { A, BodyContainer } from './downloads'
 
 const ImageContainer = styled.div`
 	position: relative;
@@ -25,12 +29,32 @@ export const HeadingContainer = styled.div`
 `
 const Heading = styled(Typography.Heading.Default)`
 	text-indent: 32px;
+	@media only screen and (max-width: 768px) {
+		text-indent: 36px;
+		font-size: 5rem;
+	}
+	@media only screen and (max-width: 600px) {
+		text-indent: 24px;
+		font-size: 4rem;
+	}
 `
 const Heading2 = styled(Typography.Heading.Default)`
 	@media only screen and (max-width: 768px) {
 		text-indent: 36px;
+		font-size: 5rem;
+	}
+	@media only screen and (max-width: 600px) {
+		text-indent: 24px;
+		font-size: 4rem;
 	}
 `
+const IndexBodyContainer = styled(BodyContainer)`
+	text-align: left;
+`
+const SubHeadingText = styled(Typography.Heading.Small)`
+	padding-bottom: ${rem(24)};
+`
+
 export default function Home() {
 	const [drawerOpen, setDrawerOpen] = useState(false)
 	const handleOpenDrawer = () => {
@@ -44,33 +68,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Home | Venomhack420</title>
-				<meta
-					name='title'
-					content='Venomhack420 Official Release by Venomforce'
-				></meta>
-				<meta
-					name='description'
-					content='Venomhack420 is available as a Meteor Client addon or as a standalone client. It was pioneered by tyrannus00 and other members of Venomforce and everyone who uses Venomhack is a god at pvp.'
-				/>
-				<meta property='og:site_name' content='Venomhack420' />
-				<meta property='og:type' content='website' />
-				<meta
-					property='og:image'
-					content='https://venomhack.com/assets/vficonlarge.png'
-				/>
-				<meta
-					property='og:title'
-					content='Venomhack420 Official Release by Venomforce'
-				/>
-				<meta property='og:url' content='https://venomhack.com' />
-				<meta
-					property='og:description'
-					content='Venomhack420 is available as a Meteor Client addon or as a standalone client. It was pioneered by tyrannus00 and other members of Venomforce and everyone who uses Venomhack is a god at pvp.'
-				/>
-				<meta name='twitter:card' content='summary_large_image' />
-
-				<meta name='theme-color' content='#000000' />
+				<HomeHead />
 			</Head>
 			{backDrop}
 			<Main>
@@ -90,9 +88,15 @@ export default function Home() {
 							fill
 						/>
 					</ImageContainer>
-					<Typography.Heading.Small>
-						Venomhack420 is here.
-					</Typography.Heading.Small>
+					<SubHeadingText>Venomhack420 is here.</SubHeadingText>
+					{/* <SubHeadingText>Join Venomforce today.</SubHeadingText>
+
+					<A href='https://discord.gg/venomforce'>
+						<TextWithImage
+							text={'Discord (Not for support)'}
+							border
+						/>
+					</A> */}
 				</Container>
 			</Main>
 		</>
