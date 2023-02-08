@@ -1,11 +1,18 @@
 import '../styles/fonts.css'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 import { Wat2DoThemeProvider } from '../theme/VenomhackThemeProvider'
 import Script from 'next/script'
+import TagManager from 'react-gtm-module'
 
+const tagManagerArgs = {
+	gtmId: 'GTM-TF72X3K',
+}
 const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
+	useEffect(() => {
+		TagManager.initialize(tagManagerArgs)
+	}, [])
 	return (
 		<>
 			<Script
@@ -25,11 +32,6 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
 		`}
 			</Script>
 
-			<Script id='google-tag-manager'>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TF72X3K');`}</Script>
 			<Wat2DoThemeProvider>
 				<Component {...pageProps} />
 			</Wat2DoThemeProvider>
