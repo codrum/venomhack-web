@@ -16,20 +16,17 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
 	return (
 		<>
 			<Script
-				id='get-ga'
-				strategy='lazyOnload'
-				src={`https://www.googletagmanager.com/gtag/js?id=G-S1B2VQGHS1`}
+				src='https://www.googletagmanager.com/gtag/js?id=G-S1B2VQGHS1'
+				strategy='afterInteractive'
 			/>
-
-			<Script id='config' strategy='lazyOnload'>
+			<Script id='google-analytics' strategy='afterInteractive'>
 				{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-S1B2VQGHS1', {
-			page_path: window.location.pathname,
-        });
-		`}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-S1B2VQGHS1');
+        `}
 			</Script>
 
 			<Wat2DoThemeProvider>
