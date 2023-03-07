@@ -9,7 +9,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import styled from 'styled-components'
-import { A, BodyContainer } from './downloads'
+import { BodyContainer } from './downloads'
 
 const ImageContainer = styled.div`
 	position: relative;
@@ -72,6 +72,10 @@ const SubHeadingButtonText = styled(Typography.Heading.Small)`
 	margin-right: auto;
 	border: 2px solid white;
 `
+const DiscordContainer = styled.div`
+	margin-top: 8px;
+	margin-bottom: 48px;
+`
 
 export default function Home() {
 	const [drawerOpen, setDrawerOpen] = useState(false)
@@ -107,12 +111,13 @@ export default function Home() {
 						/>
 					</ImageContainer>
 					<SubHeadingText>Venomhack420 is here.</SubHeadingText>
-
-					<a href='https://discord.gg/venomforce'>
-						<SubHeadingButtonText>
-							Join the Discord
-						</SubHeadingButtonText>
-					</a>
+					<DiscordContainer>
+						<a href='https://discord.gg/venomforce'>
+							<SubHeadingButtonText>
+								Join the Discord
+							</SubHeadingButtonText>
+						</a>
+					</DiscordContainer>
 				</Container>
 			</Main>
 		</>
