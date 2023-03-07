@@ -2,13 +2,14 @@ import { Backdrop } from '@/components/Backdrop'
 import { HomeHead } from '@/components/head'
 import { Header } from '@/components/Header'
 import { Container } from '@/components/layout/Container'
+import { TextWithImage } from '@/components/TextWithImage'
 import { Typography } from '@/components/typography'
 import { rem } from '@/theme/helpers'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import styled from 'styled-components'
-import { BodyContainer } from './downloads'
+import { A, BodyContainer } from './downloads'
 
 const ImageContainer = styled.div`
 	position: relative;
@@ -63,6 +64,15 @@ const SubHeadingText = styled(Typography.Heading.Small)`
 	padding-bottom: ${rem(24)};
 `
 
+const SubHeadingButtonText = styled(Typography.Heading.Small)`
+	padding: 8px 24px;
+	width: max-content;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+`
+
 export default function Home() {
 	const [drawerOpen, setDrawerOpen] = useState(false)
 	const handleOpenDrawer = () => {
@@ -97,14 +107,12 @@ export default function Home() {
 						/>
 					</ImageContainer>
 					<SubHeadingText>Venomhack420 is here.</SubHeadingText>
-					{/* <SubHeadingText>Join Venomforce today.</SubHeadingText>
 
-					<A href='https://discord.gg/venomforce'>
-						<TextWithImage
-							text={'Discord (Not for support)'}
-							border
-						/>
-					</A> */}
+					<a href='https://discord.gg/venomforce'>
+						<SubHeadingButtonText>
+							Join the Discord
+						</SubHeadingButtonText>
+					</a>
 				</Container>
 			</Main>
 		</>
