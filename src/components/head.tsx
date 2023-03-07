@@ -4,9 +4,8 @@ import { createGlobalStyle } from 'styled-components'
 import { color, font, up } from '../theme/helpers'
 
 export const FontFamilies: FunctionComponent = () => (
-	<>
+	<Head>
 		<link rel='preconnect' href='https://fonts.googleapis.com' />
-
 		<link
 			rel='preconnect'
 			href='https://fonts.gstatic.com'
@@ -16,7 +15,11 @@ export const FontFamilies: FunctionComponent = () => (
 			href='https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap'
 			rel='stylesheet'
 		></link>
-	</>
+		{/* <style data-href='https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap'>
+			@font-face{font-family:'Buda';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/buda/v25/GFDqWAN8mnyIJSSrK7ILrphaOAw.woff2) format('woff2');}
+		</style> */}
+		{/* https://fonts.gstatic.com/s/buda/v25/GFDqWAN8mnyIJSSrK7ILrphaOAw.woff2 */}
+	</Head>
 )
 
 export const HomeHead: FunctionComponent = () => (

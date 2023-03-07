@@ -5,7 +5,9 @@ module.exports = {
 	// assetPrefix: isProd ? '/venomhack.com/' : undefined,
 	swcMinify: true,
 	reactStrictMode: true,
-	// comment out while in dev
+	compiler: {
+		styledComponents: true,
+	},
 	images: {
 		unoptimized: true,
 	},

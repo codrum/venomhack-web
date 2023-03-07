@@ -2,15 +2,13 @@ import { Backdrop } from '@/components/Backdrop'
 import { HomeHead } from '@/components/head'
 import { Header } from '@/components/Header'
 import { Container } from '@/components/layout/Container'
-import { TextWithImage } from '@/components/TextWithImage'
 import { Typography } from '@/components/typography'
-import YouTubeFrame from '@/components/YoutubeFrame'
 import { rem } from '@/theme/helpers'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import styled from 'styled-components'
-import { A, BodyContainer } from './downloads'
+import { BodyContainer } from './downloads'
 
 const ImageContainer = styled.div`
 	position: relative;
@@ -18,6 +16,11 @@ const ImageContainer = styled.div`
 	height: 400px;
 	margin: auto;
 	margin-bottom: ${rem(32)};
+	@media only screen and (max-width: 768px) {
+		width: 195px;
+		height: 300px;
+		margin-bottom: 3rem;
+	}
 `
 const Main = styled.main`
 	overflow-y: hidden;
@@ -26,6 +29,11 @@ const Main = styled.main`
 export const HeadingContainer = styled.div`
 	max-width: 100%;
 	text-align: center;
+`
+const HomeHeadingContainer = styled(HeadingContainer)`
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 3rem;
+	}
 `
 const Heading = styled(Typography.Heading.Default)`
 	text-indent: 32px;
@@ -77,10 +85,10 @@ export default function Home() {
 						handleOpenDrawer={handleOpenDrawer}
 						drawerOpen={drawerOpen}
 					/>
-					<HeadingContainer>
+					<HomeHeadingContainer>
 						<Heading>Venom</Heading>
 						<Heading2>hack</Heading2>
-					</HeadingContainer>
+					</HomeHeadingContainer>
 					<ImageContainer>
 						<Image
 							src='/assets/vficonlarge.png'

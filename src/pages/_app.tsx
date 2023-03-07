@@ -5,6 +5,8 @@ import { FunctionComponent, useEffect } from 'react'
 import { Wat2DoThemeProvider } from '../theme/VenomhackThemeProvider'
 import Script from 'next/script'
 import TagManager from 'react-gtm-module'
+import Head from 'next/head'
+import { FontFamilies } from '@/components/head'
 
 const tagManagerArgs = {
 	gtmId: 'GTM-TF72X3K',
@@ -15,6 +17,8 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
 	}, [])
 	return (
 		<>
+			<FontFamilies />
+
 			<Script
 				src='https://www.googletagmanager.com/gtag/js?id=G-S1B2VQGHS1'
 				strategy='afterInteractive'

@@ -8,7 +8,7 @@ const IconBase = styled.svg.attrs({
 	display: inline-block;
 	vertical-align: middle;
 	line-height: inherit;
-	width: ${rem(48)};
+	width: ${rem(36)};
 `
 const IconPath = styled.path`
 	fill: ${color('white')};
