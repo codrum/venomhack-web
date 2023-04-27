@@ -89,9 +89,8 @@ export default function Home() {
 
 	return (
 		<>
-			<Head>
-				<HomeHead />
-			</Head>
+			<HomeHead />
+
 			{backDrop}
 			<Main>
 				<Container>
