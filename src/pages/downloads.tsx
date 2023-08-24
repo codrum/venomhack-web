@@ -58,11 +58,11 @@ export default function DownloadsPage() {
 						<DownloadsHeading>Downloads</DownloadsHeading>
 					</FeatureHeaderContainer>
 					<BodyContainer>
-						<A href='https://direct-link.net/542726/venomhack420-newbase'>
+						<A href='https://mega.nz/file/FwEGxZ6Z#kdqFM6upwwWAqE_QfzyOcErAkvtaqm_sziy-4JLdcLg'>
 							<TextWithImage text={'Newbase'} />
 						</A>
 
-						<A href='https://direct-link.net/542726/venomhack420-273-meteor'>
+						<A href='https://mega.nz/file/FgMAHKYB#PhGweIR6Y9LhKoez1s_XCUajZf8Pvre8eCUP6dNB3bk'>
 							<TextWithImage text={'Meteor Addon'} />
 						</A>
 					</BodyContainer>
